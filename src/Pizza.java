@@ -5,10 +5,13 @@ public class Pizza extends MenuItems{
     private int size;
     private ArrayList <Enum> extraToppings = new ArrayList<>();
 
-
-
     public Pizza(int size) {
         this.setSize(size);
+    }
+
+    public Pizza(String name, double price, int size) {
+        super(name, price);
+        this.size = size;
     }
 
     public int getSize() {
@@ -44,9 +47,4 @@ public class Pizza extends MenuItems{
         }
 
     }
-
-    private void printToppings() {
-        for (topping: a)
-    }
-
 }
